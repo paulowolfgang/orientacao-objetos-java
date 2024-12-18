@@ -12,6 +12,17 @@ public class Livro {
     private String isbn;
     private Autor autor;
     
+    public Livro()
+    {
+        this.isbn = "000-00-00000-00-0";
+    }
+    
+    public Livro(Autor autor)
+    {
+        this();
+        this.autor = autor;
+    }
+    
     public String getNome()
     {
         return nome;
