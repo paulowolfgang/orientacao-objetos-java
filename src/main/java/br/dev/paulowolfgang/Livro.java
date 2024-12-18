@@ -11,6 +11,7 @@ public class Livro {
     private double valor;
     private String isbn;
     private Autor autor;
+    private boolean impresso;
     
     public Livro()
     {
@@ -21,6 +22,7 @@ public class Livro {
     {
         this();
         this.autor = autor;
+        this.impresso = true;
     }
     
     public String getNome()

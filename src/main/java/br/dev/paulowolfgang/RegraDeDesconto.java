@@ -2,22 +2,33 @@ package br.dev.paulowolfgang;
 
 /**
  *
- * @author Paulo SIlva
+ * @author Paulo Silva
  */
 public class RegraDeDesconto {
     
     public static void main(String[] args) {
         
-        Livro livro = new Livro();
+        Autor autor = new Autor();
+        autor.setNome("Rodrigo Turini");
+        
+        Livro livro = new Livro(autor);
         livro.setValor(59.90);
         
-        System.out.println("Valor atual: " + livro.getValor());
-        
-        if(!livro.aplicaDescontoDe(0.1))
+        if(!livro.aplicaDescontoDe(0.3))
         {
-            System.out.println("Desconto nao pode ser maior que 30%!");
+            System.out.println("Desconto do livro nao pode ser maior que 30%.");
         } else {
-            System.out.println("Valor com desconto: " + livro.getValor());
+            System.out.println("Valor do livro com desconto: " + livro.getValor());
+        }
+        
+        Ebook ebook = new Ebook(autor);
+        ebook.setValor(29.3);
+        
+        if(!ebook.aplicaDescontoDe(0.3))
+        {
+            System.out.println("Desconto no ebook nao pode ser maior que 15%.");
+        } else {
+            System.out.println("Valor do ebook com desconto: " + ebook.getValor());
         }
     }
 }
