@@ -86,8 +86,5 @@ public abstract class Livro {
         System.out.println("-----");
     }
     
-    public boolean aplicaDescontoDe(double porcentagem)
-    {
-        return false;
-    }
+    public abstract boolean aplicaDescontoDe(double porcentagem);
 }
