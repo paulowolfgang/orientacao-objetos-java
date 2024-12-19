@@ -1,5 +1,6 @@
 package br.dev.paulowolfgang.produtos;
 
+import br.dev.paulowolfgang.exception.AutorNuloException;
 import br.dev.paulowolfgang.livraria.Autor;
 
 /**
@@ -15,16 +16,15 @@ public abstract class Livro implements Produto {
     private Autor autor;
     private boolean impresso;
     
-    public Livro()
-    {
-        this.isbn = "000-00-00000-00-0";
-    }
-    
     public Livro(Autor autor)
     {
-        this();
+        if(autor == null)
+        {
+            throw new AutorNuloException("O autor do livro não pode ser nulo.");
+        }
+        
         this.autor = autor;
-        this.impresso = true;
+        this.isbn = "000-00-00000-00-0";
     }
     
     public String getNome()
