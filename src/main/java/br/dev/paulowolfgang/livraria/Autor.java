@@ -1,4 +1,4 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.livraria;
 
 /**
  *
@@ -40,7 +40,7 @@ public class Autor {
         this.cpf = cpf;
     }
     
-    void mostrarDetalhes()
+    public void mostrarDetalhes()
     {
         System.out.println("Mostrando detalhes do autor");
         System.out.println("Nome: " + nome);

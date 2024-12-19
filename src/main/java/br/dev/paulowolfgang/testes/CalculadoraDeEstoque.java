@@ -1,4 +1,4 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.testes;
 
 /**
  *
@@ -14,15 +14,15 @@ public class CalculadoraDeEstoque {
             soma += 59.90;
         }
         
-        System.out.println("O total em estoque é: " + soma);
+        System.out.println("O total em estoque e: " + soma);
         
         if(soma < 150)
         {
-            System.out.println("Seu estoque está baixo.");
+            System.out.println("Seu estoque esta baixo.");
         } else if (soma >= 2000){
-            System.out.println("Seu estoque está muito alto");
+            System.out.println("Seu estoque esta muito alto");
         } else {
-            System.out.println("Seu estoque está bom.");
+            System.out.println("Seu estoque esta bom.");
         }
         
         /*

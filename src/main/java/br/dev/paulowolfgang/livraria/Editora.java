@@ -1,4 +1,4 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.livraria;
 
 /**
  *

@@ -1,4 +1,6 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.produtos;
+
+import br.dev.paulowolfgang.livraria.Autor;
 
 /**
  *

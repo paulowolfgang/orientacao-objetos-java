@@ -1,4 +1,6 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.produtos;
+
+import br.dev.paulowolfgang.livraria.Editora;
 
 /**
  *
@@ -43,6 +45,7 @@ public class Revista implements Produto, Promocional {
         this.editora = editora;
     }
     
+    @Override
     public boolean aplicaDescontoDe(double porcentagem)
     {
         if(porcentagem > 0.1)

@@ -1,4 +1,6 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.produtos;
+
+import br.dev.paulowolfgang.livraria.Autor;
 
 /**
  *
@@ -79,7 +81,7 @@ public abstract class Livro implements Produto {
         return this.autor != null;
     }
     
-    void mostrarDetalhes()
+    public void mostrarDetalhes()
     {
         System.out.println("Mostrando detalhes do livro");
         System.out.println("Nome: " + nome);

@@ -1,4 +1,8 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.testes;
+
+import br.dev.paulowolfgang.livraria.Autor;
+import br.dev.paulowolfgang.produtos.Livro;
+import br.dev.paulowolfgang.produtos.LivroFisico;
 
 /**
  *

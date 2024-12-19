@@ -1,4 +1,6 @@
-package br.dev.paulowolfgang;
+package br.dev.paulowolfgang.testes;
+
+import br.dev.paulowolfgang.produtos.Produto;
 
 /**
  *
