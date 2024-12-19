@@ -4,7 +4,7 @@ package br.dev.paulowolfgang;
  *
  * @author Paulo Silva
  */
-public class Livro {
+public abstract class Livro {
     
     private String nome;
     private String descricao;
@@ -88,12 +88,6 @@ public class Livro {
     
     public boolean aplicaDescontoDe(double porcentagem)
     {
-        if(porcentagem > 0.3)
-        {
-            return false;
-        }
-        
-        this.valor -= this.valor * porcentagem;
-        return true;
+        return false;
     }
 }
