@@ -4,7 +4,7 @@ package br.dev.paulowolfgang;
  *
  * @author Paulo Silva
  */
-public class Ebook extends Livro {
+public class Ebook extends Livro implements Promocional {
     
     private String waterMark;
     

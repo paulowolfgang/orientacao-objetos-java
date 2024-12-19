@@ -4,7 +4,7 @@ package br.dev.paulowolfgang;
  *
  * @author Paulo Silva
  */
-public class LivroFisico extends Livro {
+public class LivroFisico extends Livro implements Promocional {
     
     public LivroFisico(Autor autor)
     {
@@ -25,8 +25,7 @@ public class LivroFisico extends Livro {
         }
         
         double desconto = getValor() * porcentagem;
-        setValor(getValor() - desconto);
-        System.out.println("Aplicando desconto no livro fisico.");
-        return true;
+	setValor(getValor() - desconto); 
+	return true;
     }
 }

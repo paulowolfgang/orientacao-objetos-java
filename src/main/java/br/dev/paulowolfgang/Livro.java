@@ -4,7 +4,7 @@ package br.dev.paulowolfgang;
  *
  * @author Paulo Silva
  */
-public abstract class Livro {
+public abstract class Livro implements Produto {
     
     private String nome;
     private String descricao;
@@ -75,6 +75,10 @@ public abstract class Livro {
         this.autor = autor;
     }
     
+    boolean temAutor() {
+        return this.autor != null;
+    }
+    
     void mostrarDetalhes()
     {
         System.out.println("Mostrando detalhes do livro");
@@ -82,9 +86,11 @@ public abstract class Livro {
         System.out.println("Descricao: " + descricao);
         System.out.println("Valor: " + valor);
         System.out.println("ISBN: " + isbn);
-        autor.mostrarDetalhes();
+        
+        if (this.temAutor()) {
+            autor.mostrarDetalhes();
+	}
+        
         System.out.println("-----");
     }
-    
-    public abstract boolean aplicaDescontoDe(double porcentagem);
 }
